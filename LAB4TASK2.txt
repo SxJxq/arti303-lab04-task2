@@ -1,0 +1,23 @@
+48 ?- consult(['c:/Users/Scorp/OneDrive/Documents/task2_facts.pl']).
+true.
+
+49 ?-  female(X).
+X = sara ;
+X = nora.
+
+50 ?- male(_).
+true .
+
+51 ?- parent(GP, P), parent(P, faisal).
+GP = ali,
+P = muhammad .
+
+52 ?- parent(ahmad, X), female(X).
+X = sara ;
+X = nora .
+
+53 ?- parent(P, ahmad), parent(P, muhammad).
+P = ali.
+
+54 ?- male(khan), parent(P, khan), parent(P, nora).
+P = ahmad.
